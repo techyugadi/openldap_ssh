@@ -1,0 +1,7 @@
+dn: cn=Bob Jones,dc=mycompany,dc=com
+cn: Bob Jones
+sn: Jones
+objectClass: inetOrgPerson
+userPassword: USERPSWD
+uid: bjones
+
