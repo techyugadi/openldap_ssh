@@ -21,7 +21,9 @@ iii. MOST IMPORTANT : create your own ssh key pair and copy the id_rsa.pub file 
 
 (The docker image techyugadi/openldap_ssh in docker hub has a public key already embedded in it. This public key and the corresponding private key are added to this git repo, in the keys directory, just in case you want to get started quickly.)
 
-iv. Then from the directory where you copied the files, run :
+iv. There are 3 ldif files in this repository : root.ldif , org.ldif , users.ldif . Modify these files to reflect the organization structure you need. Add users / groups to users.ldif if required. Then modify the initldap.sh file to use the appropriate domain names, admin user name, etc.
+
+v. Then from the directory where you copied the files, run :
 
 sudo docker build -t="your_user/openldap_ssh" . 
 
